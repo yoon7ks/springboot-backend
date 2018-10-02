@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	</head>
+	<body>
+		<h1>Result</h1>
+		<p th:text="'seq: ' + ${result.user_id}" />
+		<p th:text="'teamName: ' + ${result.user_pw}" />
+		<a href="/form">팀 등록하기</a> |
+		<a th:href="@{|/addUser|}">유저 등록하기</a>
+	</body>
+</html>
